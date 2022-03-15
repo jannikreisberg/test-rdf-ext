@@ -12,7 +12,6 @@ jobs:
       - uses: actions/github-script@v6
         with:
           script: |
-            const rdf = require('rdf-ext')
-            // const { default: printStuff } = await import('rdf-ext');
-            // await printStuff();
+            // const rdf = require('rdf-ext')
+            const rdf = import('rdf-ext');
             console.log("Alles Gut!");
