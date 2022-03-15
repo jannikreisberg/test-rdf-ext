@@ -10,8 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install rdf-ext
+      - run: npm ci
       - uses: actions/github-script@v6
         with:
           script: |
-            const rdf = await import('node_modules/rdf-ext')
+            console.log("Vor import")
+            const rdf = require('rdf-ext')
             console.log("Alles Gut!");
