@@ -2,7 +2,8 @@
 name: Check if rdf-ext works
 
 # Controls when the workflow will run
-on: push
+on:
+  workflow_dispatch
 
 jobs:
   print-stuff:
