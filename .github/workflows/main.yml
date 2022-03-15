@@ -13,6 +13,5 @@ jobs:
       - uses: actions/github-script@v6
         with:
           script: |
-            // const rdf = require('rdf-ext')
-            const rdf = import('rdf-ext');
+            const rdf = require('rdf-ext')
             console.log("Alles Gut!");
