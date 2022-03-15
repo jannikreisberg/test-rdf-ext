@@ -8,14 +8,11 @@ jobs:
   print-stuff:
     runs-on: ubuntu-latest
     steps:
-      - run: npm install axios
-      - run: npm install fs
       - run: npm install rdf-ext
-      - uses: actions/checkout@v2
       - uses: actions/github-script@v6
         with:
           script: |
-            const factory = require('rdf-ext');
+            const rdf = require('rdf-ext')
             // const { default: printStuff } = await import('rdf-ext');
             // await printStuff();
             console.log("Alles Gut!");
