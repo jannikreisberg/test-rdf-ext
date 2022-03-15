@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: npm install rdf-ext
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
       - uses: actions/github-script@v6
         with:
           script: |
